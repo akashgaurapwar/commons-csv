@@ -1,8 +1,8 @@
 
-#override:
-#    - mvn -DskipTests clean install dependency:resolve-plugins dependency:go-offline
+override:
+    - mvn -DskipTests clean install dependency:resolve-plugins dependency:go-offline
     
-override: - mvn clean package mvn integration-test
+#override: - mvn clean package mvn integration-test
 
 test:
  post:
